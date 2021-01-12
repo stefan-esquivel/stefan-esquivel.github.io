@@ -1,0 +1,173 @@
+<!--
+  index.html
+  Last Modified: 1/7/21
+  Coder: Stefan Esquivel
+  Oddities: Tested so far in Chrome. This is a early stage for the website so some scaling things wont work
+  top priotites is to get the desktop version complete.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      Fonts: Lato is a simple and clean font used in flat OS designs
+    -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Esquivel | Bring Passion Into Your Team</title>
+  </head>
+
+  <body>
+    <!--
+      Header: It contains the front page and is the essential part of the website.
+
+      Contains: Hero Image, Main Navi, personal logo, and title.
+
+      Future: Hovering the title will reveal some of my skills and programming stat, including complete lines, pushed on GitHub.
+
+    -->
+    <header class="header">
+      <nav>
+        <!--
+          Navi element: Change later for different screen sizes with media queries
+        -->
+
+        <div class="row">
+          <ul class="main-nav">
+            <li class="main-nav__list-element">
+              <a href="#" class="main-nav__element-item">About</a>
+            </li>
+            <li class="main-nav__list-element">
+              <a href="#" class="main-nav__element-item">Skills</a>
+            </li>
+            <li class="main-nav__list-element">
+              <a href="#" class="main-nav__element-item">Work</a>
+            </li>
+            <li class="main-nav__list-element">
+              <a href="#" class="main-nav__element-item">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main"
+            >Bring Passion To Your Workplace</span
+          >
+        </h1>
+      </div>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="row">
+          <div class="u-center-text u-margin-bottom-small">
+            <h2 class="heading-secondary">About Me</h2>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Skills Section: 
+
+        Has four of my top workplace skill and or competencies
+
+        Action: Clicking one of these moduals will open up flip page containing a write up explaining the skill in depth
+      -->
+      <section class="section-skill">
+        <div class="row">
+          <div class="u-center-text u-margin-bottom-small">
+            <h2 class="heading-secondary">A Veriaty of Skills</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-gear"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Robotics</h3>
+              <p class="skill-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                deleniti vel doloribus harum accusantium
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-lightbulb"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Design</h3>
+              <p class="skill-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                deleniti vel doloribus harum accusantium
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-share"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Algorithms</h3>
+              <p class="skill-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                deleniti vel doloribus harum accusantium
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-server2"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Cloud Solutions
+              </h3>
+              <p class="skill-box__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                deleniti vel doloribus harum accusantium
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+        Workplace Section: 
+
+        Contains a showcase where I worked
+
+        Action:
+      -->
+
+      <section class="section-work">
+        <div class="row">
+          <div class="u-center-text u-margin-bottom-small">
+            <h2 class="heading-secondary">Work Places</h2>
+          </div>
+        </div>
+
+        <div class="row"></div>
+      </section>
+
+      <!--
+        Contact Section: 
+
+        For people to contact me if the want to to ask questions on my work or wish to contact me for professional reasions
+
+        Action:
+      -->
+      <section class="section-contact">
+        <div class="row">
+          <div class="u-center-text u-margin-bottom-small">
+            <h2 class="heading-secondary">Contact</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
