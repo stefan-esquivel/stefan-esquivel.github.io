@@ -76,10 +76,10 @@ body {
     height: 2px;
     display: block;
     background-color: #f368e0;
-    content: " ";
+    content: "";
     width: 10rem;
     margin: 0 auto;
-    margin-top: 3rem; }
+    margin-top: 1rem; }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -129,6 +129,12 @@ body {
   color: #555; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--pink {
+  background-color: #f368e0;
+  color: #fff; }
+  .btn--pink::after {
+    background-color: #f368e0; }
 
 .btn::after {
   content: "";
@@ -265,13 +271,12 @@ body {
 
 .section-skill {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh; }
+  padding: 7rem 0 10rem 0;
+  margin-top: -10rem; }
 
 .section-work {
   background-color: #fff;
-  padding: 10rem 0;
-  margin-top: -20vh; }
+  padding: 10rem 0; }
 
 .section-contact {
   background-color: #f7f7f7; }
