@@ -1,0 +1,21 @@
+.footer {
+  background-color: $color-grey-dark-1;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+
+  &__social-navigation {
+    padding-top: 2rem;
+    display: inline-block;
+  }
+
+  &__social-list {
+    list-style: none;
+  }
+
+  &__social-list-element {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+}
