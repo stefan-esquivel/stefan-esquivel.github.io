@@ -215,16 +215,93 @@ body {
 
 .photo {
   position: relative;
-  margin: 5rem; }
+  margin: 5rem auto;
+  width: 40rem;
+  height: 30rem;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  transition: all 0.2s; }
   .photo__content {
-    border-radius: 2px;
-    width: 80%;
-    object-fit: contain;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-    transition: all 0.2s; }
-    .photo__content:hover {
-      transform: scale(1.05) translateY(-0.5rem);
-      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+    height: 100%;
+    position: absolute;
+    object-fit: cover; }
+  .photo:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5); }
+
+.form__group {
+  margin: 0 auto; }
+  .form__group:not(:last-child) {
+    margin-bottom: 1rem; }
+
+.form__contact {
+  margin: 0 25rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  transition: all 0.3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #8bf268; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid red; }
+
+.form__select {
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  color: #555; }
+  .form__select:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #8bf268; }
+  .form__select:focus:invalid {
+    border-bottom: 3px solid red; }
+  .form__select:invalid {
+    color: #777; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
+
+.form__textarea {
+  height: 22.55rem;
+  width: 100%;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid #ccc;
+  color: inherit; }
+  .form__textarea:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #8bf268; }
 
 .header {
   height: 100vh;
@@ -334,4 +411,5 @@ body {
   padding: 5rem 0; }
 
 .section-contact {
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  padding: 5rem 0; }
